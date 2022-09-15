@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DetailActivity"
+    tools:showIn="@layout/activity_detail"
+    app:layoutDescription="@xml/content_detail_scene">
+
+    <TextView
+        android:id="@+id/fileNameLabel"
+        style="@style/TextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/file_name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/urlNameLabel"
+        app:layout_constraintEnd_toStartOf="@+id/urlNameLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/statusLabel"
+        style="@style/TextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        app:layout_constraintBaseline_toBaselineOf="@+id/statusValueLabel"
+        app:layout_constraintEnd_toStartOf="@+id/statusValueLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/urlNameLabel"
+        style="@style/TextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/statusValueLabel"
+        style="@style/TextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+
+    <Button
+        android:id="@+id/okButton"
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_ok"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
